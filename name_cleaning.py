@@ -47,7 +47,7 @@ df = df.astype(object).where(pd.notnull(df),None)
 
 #MSSQL
 
-conn = pymssql.connect(host = 'localhost', user = 'sa', password = '********', database = 'sqlserver')
+conn = pymssql.connect(host = 'localhost', user = 'sa', password = 'Nice try', database = 'sqlserver')
 cur = conn.cursor()
 
 cur.execute("DROP FUNCTION IF EXISTS SPLIT_PART ;")
